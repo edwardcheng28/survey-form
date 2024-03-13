@@ -5,8 +5,17 @@ body {
   padding: 20px
 }
 
+.logo {
+  width: 80%;
+  /* justify-content: center; */
+  display: block;
+  border: none;
+  padding: none;
+  margin: -10px auto -30px;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 p {
   font-size: 20px;
@@ -60,7 +69,4 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
 }
-/* 
-h1 {
-  margin: 0;
-} */
+
