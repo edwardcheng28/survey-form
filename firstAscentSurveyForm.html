@@ -9,22 +9,23 @@
 <body>
   <div class="survey">
     <main>
-      <a href="https://faclimbing.com/"><img class='logo' src="../survey-form/images/FirstAscentLogo_87x2.png"></a>
+      <a href="https://faclimbing.com/"><img class='logo' src="../survey-form/images/FirstAscentLogo_87x2.png" alt="First Ascent Climbing"></a>
       <h1 id="title">Survey Form</h1>
       <hr> <!-- line-->
-      <form id="survey-form">
-        <label for='name' id="name-label">Enter you name: <input id="name" name="name" type="text" placeholder="Enter you name:" required /></label>
-        <label for="email" id="email-label">Enter your email: <input id="email" name="email" type="email"
+      <form id="survey-form"></form> <!--method="post" action='whereverthedatagoes.com'-->
+        <label class='bold' for='name' id="name-label">Enter you name: <input id="name" name="name" type="text" placeholder="Enter you name:" required /></label>
+        <label class='bold' for="email" id="email-label">Enter your email: <input id="email" name="email" type="email"
           pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ " placeholder="Enter you email:" required/></label>
-        <label for="age-range" id="age">What is your age range: <select id="age-range" name="age range"  placeholder="Enter your age:" required>
+        <label class='bold' for="age-range" id="age">What is your age range: <select id="age-range" name="age range"  placeholder="Enter your age:" required>
+          <option value="">(select one)</option>
           <option value="1">18 - 25</option>
-          <option value="1">26 - 30</option>
-          <option value="1">31 - 40</option>
-          <option value="1">41 - 50</option>
-          <option value="1">51 - 60</option>
-          <option value="1">61+</option>
+          <option value="2">26 - 30</option>
+          <option value="3">31 - 40</option>
+          <option value="4">41 - 50</option>
+          <option value="5">51 - 60</option>
+          <option value="6">61+</option>
         </select></label> <!--Pattern for number input?-->
-        <label for="Location" > Choose Location
+        <label for="Location" class='bold'> Choose Location
           <select id="location-dropdown">
             <option value="">(select one)</option>
             <option value="1">Avondale</option>
@@ -34,8 +35,8 @@
             <option value="5">Arlington Heights</option>
           </select>
         </label>
-        <fieldset class="satisfaction">
-          <legend>Rate each question based on your satisfaction:</legend>
+        <fieldset class="satisfaction" >
+          <legend class='bold'>Rate each question based on your satisfaction:</legend>
           <label>Facility Cleanliness
             <select id='satisfaction-dropdown'>
               <option value="">(select one)</option>
@@ -108,53 +109,51 @@
           </label>
         </fieldset>
         <fieldset>
-          <legend>Red pill or blue pill?</legend>
-          <label><input id="red" value="red" name="red-blue" type="radio" checked/>Red</label>
-          <label><input id="blue" value="blue" name="red-blue" type="radio"/>Blue</label>
-        </fieldset>
-        <fieldset>
-          <legend>How did you hear about us</legend>
+          <legend class='bold'>How did you hear about us? (Click all that apply)</legend>
           <label><input id="friends-family" value="friends-family" type="checkbox" name='hear-about-us'>  Friends / Family</label>
           <label><input id="social-media" value="social-media" type="checkbox" name='hear-about-us'>  Social Media</label>
           <label><input id="online-search" value="online-search" type="checkbox" name='hear-about-us'>  Online via Search Engine</label>
           <label><input id="Other" value="Other" type="checkbox" name='hear-about-us'>  Other</label>
+          <br>
           <label for="hear-about-us-other">If other, please explain below...</label>
             <textarea id="hear-about-us" name="hear-about-us" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
         <fieldset>
-          <legend>What do you like most about our facility? (Click all that apply)</legend>
+          <legend class='bold'>What do you like most about our facility? (Click all that apply)</legend>
           <label><input id='events' value="events" name="facility-likes" type="checkbox"> The Events</label>
           <label><input id='competition' value="competition" name="facility-likes" type="checkbox"> League Competition</label>
           <label><input id='yoga' value="yoga" name="facility-likes" type="checkbox"> Yoga Classes</label>
           <label><input id='route-setting' value="route-setting" name="facility-likes" type="checkbox"> The route setting</label>
           <label><input id='facility-other' value="facility-other" name="facility-likes" type="checkbox"> Other</label>
+          <br>
           <label for="facility-other">If other, please explain below...</label>
             <textarea id="other-like" name="other-like" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
        
         <fieldset>
-          <legend>What are your favorite features about the gym? (Click all that apply)</legend>
+          <legend class='bold'>What are your favorite features about the gym? (Click all that apply)</legend>
           <label><input id='speed-wall' value="speed-wall" name='features' type="checkbox"> The Speed Wall</label>
           <label><input id='auto-belay' value="auto-belay" name='features' type="checkbox"> Auto Belay</label>
           <label><input id='weight-room' value="weight-room" name='features' type="checkbox"> The weight room</label>
           <label><input id='kilter-board' value="kilter-board" name='features' type="checkbox"> The Kilter Board</label>
           <label><input id='work-areas' value="work-areas" name='features' type="checkbox"> The chill areas to lounge and work</label>
           <label><input id='features-other' value="features-other" name='features' type="checkbox"> Other</label>
+          <br>
           <label for="features-other">If other, please explain below...</label>
             <textarea id="other-features" name="other-features" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
-        <label for="kaya">If you have used the Kaya App, what do you like/dislike about it</label>
+        <label class='bold' for="kaya">If you have used the Kaya App, what are your thoughts on it?</label>
           <textarea id="kaya-comments" name="kaya-comments" rows="5" columns="100" placeholder="Feedback about the Kaya app..."></textarea>
-        <label for="additional-comments">Any additional comments you would like to address...</label>
+        <label class='bold' for="additional-comments">Any additional comments you would like to address?</label>
             <textarea id="additional-comments" name="additional-comments" rows="5" columns="100" placeholder="Additional feedback..."></textarea>
 
-        <label><input type="checkbox" label="email-signup" value="email-signup" name="email-signup"> Would you like to sign up to our email list for pormotional deals, gym news and events</label>
+        <label><input type="checkbox" label="email-signup" value="email-signup" name="email-signup"> Check to sign up to our email list for pormotional deals, gym news, and events.</label>
         <hr> <!-- line-->
         <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
-      <p>
+      <p class="copyright">
         No Copyright - <a href="https://faclimbing.com/">Climb with us!</a>
       </p>
     </footer>

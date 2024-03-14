@@ -17,10 +17,7 @@ body {
 h1 {
   font-size: 30px;
 }
-p {
-  font-size: 20px;
-}
-form{ 
+label {
   font-size: 15px;
 }
 
@@ -34,17 +31,25 @@ h1, p {
   margin-right: auto;
   padding: 25px;
   max-width: 800px;
-  }
+}
 
 form {
   border: none;
   padding: 2rem 0;
   margin: -25px auto;
+  font-size: medium;
 }
 
 fieldset {
   padding: -10px;
   margin-top: 5px;
+}
+legend {
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 textarea {
@@ -70,3 +75,22 @@ input[type="submit"] {
   min-width: 300px;
 }
 
+input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  margin-right: 2em;
+  cursor: pointer;
+  vertical-align: sub;
+}
+
+input, select{
+  margin:3px auto;
+  width: 25%;
+  min-height: 2.2em;
+  vertical-align: middle;
+}
+
+.copyright {
+  font-size: 1rem;
+  margin: 0em auto;
+}
