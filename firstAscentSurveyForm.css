@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../survey-form/images/climbing-wall-2.jpeg) left/cover no-repeat fixed; 
+  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/images/climbing-wall-2.jpeg) left/cover no-repeat fixed; 
   /*start on left side, cover whole window, no repeat, fixed picture*/
   font-family: sans-serif;
   padding: 20px
