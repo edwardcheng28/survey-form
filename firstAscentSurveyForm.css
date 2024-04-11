@@ -46,7 +46,7 @@
 }
 
 .navbar-toggler{
-  color: var(--white);
+  color: var(--yellow);
   background-color: var(--navbar-grey);
   border: none;
   cursor: pointer;
@@ -75,11 +75,15 @@
 }
 
 
-/* .navbar-collapse{
+.navbar-collapse{
   height: 0;
   overflow: hidden;
   transition: all 0.4s ease 0s;
-} */
+}
+/* navbar will appear when toggle clicked */
+.showNav{
+  height: 180px;
+}
 
 /* body */
 body {
@@ -200,3 +204,6 @@ input, select{
 .climb-with-us:hover{
   color: var(--yellow);
 }
+
+/* media queries */
+
