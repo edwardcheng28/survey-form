@@ -207,3 +207,13 @@ input, select{
 
 /* media queries */
 
+@media (min-width: 995px) {
+  .navbar-collapse{
+    height: auto;
+    justify-content: flex-end;
+    transition: none;
+  }
+  .navbar-toggler{
+    display: none;
+  }
+}
