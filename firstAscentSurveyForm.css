@@ -84,8 +84,7 @@
 /* body */
 body {
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/images/climbing-wall-2.jpeg) left/cover no-repeat fixed; 
-  /*start on left side, cover whole window, no repeat, fixed picture*/
-  margin: 0;
+  margin: 120px 0 0 0;
 }
 
 .logo {
