@@ -8,40 +8,42 @@
   <script src="https://kit.fontawesome.com/b98a63461f.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
+  <!-- header -->
   <nav class="navbar">
-    <div class="brand-and-toggler">
-      <a href="https://faclimbing.com/" class="navbar-brand">
+      <a href="https://faclimbing.com/">
         <img src="/images/nav-brand-logo-FA.jpg" class="navbar-brand-image">
       </a>
-      <!-- Add button for toggler, requires JS and kit -->
-      <button type="button" class="navbar-toggler" id="navbar-toggler">
-        <i class="fa-solid fa-bars"></i> <!-- adding toggle bar with fontawesome-->
-      </button>
-    </div>
-    <div class="navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="https://faclimbing.com/first-visit/" class="nav-link">First Visit</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://faclimbing.com/programs/" class="nav-link">Programs</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://faclimbing.com/membership/" class="nav-link">Membership</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://faclimbing.com/gift-cards/" class="nav-link">Gift Cards</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://faclimbing.com/about/" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://faclimbing.com/contact/" class="nav-link">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="toggler">
+        <!-- <button type="button" class="navbar-toggler" id="navbar-toggler">
+          <i class="fa-solid fa-bars"></i> 
+        </button> -->
+      </div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="https://faclimbing.com/first-visit/" class="nav-link">First Visit</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://faclimbing.com/programs/" class="nav-link">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://faclimbing.com/membership/" class="nav-link">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://faclimbing.com/gift-cards/" class="nav-link">Gift Cards</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://faclimbing.com/about/" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://faclimbing.com/contact/" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- End Header -->
 
   <div class="survey">
     <main>
@@ -49,9 +51,9 @@
       <h1 id="title">Survey Form</h1>
       <hr> <!-- line-->
       <form id="survey-form"></form> <!--method="post" action='whereverthedatagoes.com'-->
-        <label class='bold' for='name' id="name-label">Enter you name: <input id="name" name="name" type="text" placeholder="Enter you name:" required /></label>
-        <label class='bold' for="email" id="email-label">Enter your email: <input id="email" name="email" type="email"
-          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ " placeholder="Enter you email:" required/></label>
+      <label class='bold' for='name' id="name-label">Enter you name: <input id="name" name="name" type="text" placeholder="Enter you name:" required /></label>
+      <label class='bold' for="email" id="email-label">Enter your email: <input id="email" name="email" type="email"
+        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ " placeholder="Enter you email:" required/></label>
         <label class='bold' for="age-range" id="age">What is your age range: <select id="age-range" name="age range"  placeholder="Enter your age:" required>
           <option value="">(select one)</option>
           <option value="1">18 - 25</option>
@@ -152,7 +154,7 @@
           <label><input id="Other" value="Other" type="checkbox" name='hear-about-us'>  Other</label>
           <br>
           <label for="hear-about-us-other">If other, please explain below...</label>
-            <textarea id="hear-about-us" name="hear-about-us" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
+          <textarea id="hear-about-us" name="hear-about-us" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
         <fieldset>
           <legend class='bold'>What do you like most about our facility? (Click all that apply)</legend>
@@ -163,9 +165,9 @@
           <label><input id='facility-other' value="facility-other" name="facility-likes" type="checkbox"> Other</label>
           <br>
           <label for="facility-other">If other, please explain below...</label>
-            <textarea id="other-like" name="other-like" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
+          <textarea id="other-like" name="other-like" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
-       
+        
         <fieldset>
           <legend class='bold'>What are your favorite features about the gym? (Click all that apply)</legend>
           <label><input id='speed-wall' value="speed-wall" name='features' type="checkbox"> The Speed Wall</label>
@@ -176,13 +178,13 @@
           <label><input id='features-other' value="features-other" name='features' type="checkbox"> Other</label>
           <br>
           <label for="features-other">If other, please explain below...</label>
-            <textarea id="other-features" name="other-features" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
+          <textarea id="other-features" name="other-features" rows="5" columns="100" placeholder="If other, please explain below..."></textarea>
         </fieldset>
         <label class='bold' for="kaya">If you have used the Kaya App, what are your thoughts on it?</label>
-          <textarea id="kaya-comments" name="kaya-comments" rows="5" columns="100" placeholder="Feedback about the Kaya app..."></textarea>
+        <textarea id="kaya-comments" name="kaya-comments" rows="5" columns="100" placeholder="Feedback about the Kaya app..."></textarea>
         <label class='bold' for="additional-comments">Any additional comments you would like to address?</label>
-            <textarea id="additional-comments" name="additional-comments" rows="5" columns="100" placeholder="Additional feedback..."></textarea>
-
+        <textarea id="additional-comments" name="additional-comments" rows="5" columns="100" placeholder="Additional feedback..."></textarea>
+        
         <label><input type="checkbox" label="email-signup" value="email-signup" name="email-signup"> Check to sign up to our email list for pormotional deals, gym news, and events.</label>
         <hr> <!-- line-->
         <input type="submit" value="Submit" />
@@ -194,5 +196,6 @@
       </p>
     </footer>
   </div>
+  <script src="firstAscentSurveyForm.js"></script> 
 </body>
 </html>

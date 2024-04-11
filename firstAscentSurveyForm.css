@@ -1,19 +1,86 @@
+/* font style import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
 }
 
-.navbar-brand-image{
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
+* {
+  box-sizing: border-box;
 }
 
+:root{
+  --navbar-grey: rgba(51,52,54,255);
+  --white: rgba(255,255,255,255);
+  --yellow: rgba(239,194,27,255)
+}
+
+/* All Navbar */
+
+/* Navbar Background */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: var(--navbar-grey);
+  width: 100%;
+  box-shadow: 0 0 4px var(--navbar-grey);
+  margin: 0;
+}
+
+.navbar-brand-image{
+  width: 300px;
+  cursor: pointer;
+}
+
+.navbar-toggler{
+  color: var(--white);
+  background-color: var(--navbar-grey);
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.nav-item{
+  cursor: pointer;
+  padding: 0px 10px;
+  list-style: none;
+  display: inline-block;
+  transition: all 0.4s ease 0s; 
+}
+
+/* nav item link styling */
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow)
+}
+
+
+/* .navbar-collapse{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+} */
+
+/* body */
 body {
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/images/climbing-wall-2.jpeg) left/cover no-repeat fixed; 
   /*start on left side, cover whole window, no repeat, fixed picture*/
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
