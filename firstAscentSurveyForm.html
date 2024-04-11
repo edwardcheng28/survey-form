@@ -54,7 +54,7 @@
       <label class='bold' for='name' id="name-label">Enter you name: <input id="name" name="name" type="text" placeholder="Enter you name:" required /></label>
       <label class='bold' for="email" id="email-label">Enter your email: <input id="email" name="email" type="email"
         pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ " placeholder="Enter you email:" required/></label>
-        <label class='bold' for="age-range" id="age">What is your age range: <select id="age-range" name="age range"  placeholder="Enter your age:" required>
+        <label class='bold' for="age-range" id="age">What is your age range: <select id="age-range" name="age-range" required>
           <option value="">(select one)</option>
           <option value="1">18 - 25</option>
           <option value="2">26 - 30</option>
@@ -63,8 +63,8 @@
           <option value="5">51 - 60</option>
           <option value="6">61+</option>
         </select></label> <!--Pattern for number input?-->
-        <label for="Location" class='bold'> Choose Location
-          <select id="location-dropdown">
+        <label for="location" class='bold'> Choose Location
+          <select id="location" name="location">
             <option value="">(select one)</option>
             <option value="1">Avondale</option>
             <option value="2">Uptown</option>
@@ -187,12 +187,12 @@
         
         <label><input type="checkbox" label="email-signup" value="email-signup" name="email-signup"> Check to sign up to our email list for pormotional deals, gym news, and events.</label>
         <hr> <!-- line-->
-        <input type="submit" value="Submit" />
+        <input class="submit-button" type="submit" value="Submit" />
       </form>
     </main>
     <footer>
       <p class="copyright">
-        No Copyright - <a href="https://faclimbing.com/">Climb with us!</a>
+        No Copyright - <a href="https://faclimbing.com/" class="climb-with-us">Climb with us!</a>
       </p>
     </footer>
   </div>

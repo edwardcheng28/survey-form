@@ -14,7 +14,13 @@
 :root{
   --navbar-grey: rgba(51,52,54,255);
   --white: rgba(255,255,255,255);
-  --yellow: rgba(239,194,27,255)
+  --black: rgb(0, 0, 0);
+  --yellow: rgba(239,194,27,255);
+}
+
+/* font */
+.nav-link, body, textarea, .climb-with-us, .submit-button{
+  font-family: "Montserrat", sans-serif;
 }
 
 /* All Navbar */
@@ -57,15 +63,14 @@
 }
 
 /* nav item link styling */
-a {
-  font-family: "Montserrat", sans-serif;
+.nav-link{
   font-weight: 500;
   font-size: 15px;
   color: var(--white);
   text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
   color: var(--yellow)
 }
 
@@ -80,7 +85,6 @@ a:hover {
 body {
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/images/climbing-wall-2.jpeg) left/cover no-repeat fixed; 
   /*start on left side, cover whole window, no repeat, fixed picture*/
-  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -134,7 +138,6 @@ legend {
 textarea {
   /* display:inline-block; */
   font-size: 15px;
-  font-family: sans-serif;
   width: 100%;
   height: 150px;
 }
@@ -169,7 +172,32 @@ input, select{
   vertical-align: middle;
 }
 
+.submit-button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  font-weight: bold;
+}
+
+.submit-button:hover{
+  background-color: var(--yellow);
+}
+
 .copyright {
   font-size: 1rem;
   margin: 0em auto;
+  font-weight: 500;
+}
+
+.climb-with-us{
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.climb-with-us:hover{
+  color: var(--yellow);
 }
